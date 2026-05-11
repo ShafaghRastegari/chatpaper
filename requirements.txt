@@ -77,9 +77,11 @@ langsmith==0.8.1
 llama-index-core==0.14.21
 llama-index-embeddings-fastembed==0.6.0
 llama-index-embeddings-huggingface==0.7.0
+llama-index-embeddings-huggingface-api==0.5.0
 llama-index-instrumentation==0.5.0
 llama-index-llms-openai==0.7.7
 llama-index-llms-openai-like==0.7.2
+llama-index-utils-huggingface==0.4.1
 llama-index-vector-stores-chroma==0.5.5
 llama-index-workflows==2.20.0
 loguru==0.7.3

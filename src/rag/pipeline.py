@@ -7,6 +7,8 @@ from llama_index.core.node_parser import SentenceSplitter
 from llama_index.vector_stores.chroma import ChromaVectorStore
 from llama_index.llms.openai_like import OpenAILike
 from llama_index.embeddings.fastembed import FastEmbedEmbedding
+from llama_index.embeddings.huggingface_api import HuggingFaceInferenceAPIEmbedding
+
 
 from src.ingestion.pdf_loader import load_papers_from_folder
 
@@ -27,8 +29,9 @@ def setup_models() -> None:
         is_chat_model=True,
         context_window=32000,
     )
-    Settings.embed_model = FastEmbedEmbedding(
-        model_name="BAAI/bge-small-en-v1.5"
+    Settings.embed_model = HuggingFaceInferenceAPIEmbedding(
+        model_name="BAAI/bge-small-en-v1.5",
+        api_key=os.getenv("HUGGINGFACE_API_KEY"),
     )
     _models_initialized = True
     print("Models configured")
