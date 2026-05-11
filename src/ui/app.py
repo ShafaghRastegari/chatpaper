@@ -443,7 +443,7 @@ st.markdown("""
         left: var(--sidebar-width, 0px);
         z-index: 999;
         padding: 0.75rem 1.5rem;
-        background: #0e1117;
+        background: transparent
         border-top: 1px solid #262730;
     }
 
@@ -456,7 +456,7 @@ st.markdown("""
 
     /* Extra padding at bottom so last message is not hidden */
     .main .block-container {
-        padding-bottom: 90px;
+        padding-bottom: 140px !important;
     }
 
     /* ── Remove emoji from expander headers ── */
