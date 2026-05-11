@@ -1,3 +1,13 @@
+---
+title: ChatPaper
+emoji: 🔬
+colorFrom: indigo
+colorTo: purple
+sdk: streamlit
+sdk_version: 1.43.0
+app_file: src/ui/app.py
+pinned: false
+---
 # ChatPaper — Research Assistant Powered by RAG and AI Agents
 
 
