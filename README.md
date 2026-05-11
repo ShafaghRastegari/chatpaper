@@ -1,3 +1,4 @@
+# ChatPaper — Research Assistant Powered by RAG and AI Agents
 ---
 title: ChatPaper
 emoji: 🔬
@@ -8,8 +9,10 @@ sdk_version: 1.43.0
 app_file: src/ui/app.py
 pinned: false
 ---
-# ChatPaper — Research Assistant Powered by RAG and AI Agents
 
+Find the Project: 
+[![HuggingFace Space](https://img.shields.io/badge/🤗%20HuggingFace-Space-yellow)](https://huggingface.co/spaces/Shafagh99/chatpaper)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](https://github.com/Shafagh99/chatpaper)
 
 ChatPaper is a local AI research assistant that lets you have a conversation with your academic papers. Upload PDFs, ask questions in plain English, and get cited, grounded answers and also find relevant paper! Built with production-grade RAG architecture, a LangGraph agent, and automated quality evaluation.
 
