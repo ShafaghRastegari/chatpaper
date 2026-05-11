@@ -443,8 +443,8 @@ st.markdown("""
         left: var(--sidebar-width, 0px);
         z-index: 999;
         padding: 0.75rem 1.5rem;
-        background: transparent
-        border-top: 1px solid #262730;
+        background: transparent;
+        border-top: none;
     }
 
     /* On wide screens where sidebar is visible, offset by sidebar width */
@@ -454,9 +454,30 @@ st.markdown("""
         }
     }
 
-    /* Extra padding at bottom so last message is not hidden */
+    /* Extra padding at bottom so last message is not hidden behind input */
     .main .block-container {
-        padding-bottom: 140px !important;
+        padding-bottom: 160px !important;
+    }
+
+    /* Remove black background from chat messages area */
+    .stChatMessage {
+        background: transparent !important;
+    }
+
+    /* Fix active papers banner black background */
+    .active-papers-banner {
+        background: rgba(255,255,255,0.05) !important;
+        border: 1px solid rgba(255,255,255,0.1) !important;
+        color: inherit !important;
+    }
+    .active-papers-banner span {
+        color: #818cf8 !important;
+    }
+
+    /* Make page not scroll — only inner content scrolls */
+    section.main > div {
+        overflow-y: auto;
+        height: calc(100vh - 80px);
     }
 
     /* ── Remove emoji from expander headers ── */
