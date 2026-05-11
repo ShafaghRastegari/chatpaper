@@ -456,7 +456,12 @@ st.markdown("""
 
     /* Extra padding at bottom so last message is not hidden behind input */
     .main .block-container {
-        padding-bottom: 160px !important;
+        padding-bottom: 200px !important;
+    }
+
+    /* Ensure chat messages don't go behind the input bar */
+    [data-testid="stChatMessageContent"] {
+        margin-bottom: 10px;
     }
 
     /* Remove black background from chat messages area */
@@ -474,10 +479,9 @@ st.markdown("""
         color: #818cf8 !important;
     }
 
-    /* Make page not scroll — only inner content scrolls */
-    section.main > div {
+    /* Ensure main content is scrollable */
+    section.main {
         overflow-y: auto;
-        height: calc(100vh - 80px);
     }
 
     /* ── Remove emoji from expander headers ── */
