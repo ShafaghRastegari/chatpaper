@@ -657,6 +657,9 @@ def render_chat_tab():
                         st.metric(label=get_score_emoji(score) + " Context Precision", value=str(score))
                         st.caption(format_score_bar(score))
 
+    # Spacer so last message is never hidden behind the input bar
+    st.markdown("<div style='height: 80px'></div>", unsafe_allow_html=True)
+
     if user_input := st.chat_input("Ask anything about the selected paper(s)..."):
         with st.chat_message("user"):
             st.markdown(user_input)
